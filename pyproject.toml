@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "hackathon 2-0"
+version = "0.1.0"
+description = "Hackathon 2.0"
+authors = ["Ikechukwu-Christian <christainekwueme23@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "hackathon 2"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+uvicorn = "^0.29.0"
+pydantic = {extras = ["email"], version = "^2.6.4"}
+fastapi = "^0.110.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
